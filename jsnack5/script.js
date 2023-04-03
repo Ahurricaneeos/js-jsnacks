@@ -8,13 +8,13 @@ let evenNumbers = new Array();
 
 for (let i = 0; i <= 6; i++){
   numbers = parseInt(prompt("Inserisci un numero:"));
-  if (numbers / 2 == 0) {
-    evenNumbers++;
+  if (numbers % 2 == 0) {
+    evenNumbers(numbers.push);
   } else {
-    oddNumbers++;
+    oddNumbers(numbers.push);
   }
 }
 
 console.log(oddNumbers.length);
 
-/* Esce undefined; perchè? */
+/* Is not a function */
